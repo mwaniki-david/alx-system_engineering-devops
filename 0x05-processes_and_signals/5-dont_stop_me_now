@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+read -p "Enter the PID of the script to stop: " PID
+
+kill "$PID"
+
