@@ -4,3 +4,4 @@
 read -p "Enter the PID of the script to kill: " PID
 
 kill -9 "$PID"
+

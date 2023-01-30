@@ -3,3 +3,4 @@
 read -p "Enter the PID of the script to stop: " PID
 
 pkill -P "$PID"
+
