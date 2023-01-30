@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Stop the script that displays "To infinity and beyond" indefinitely
-read -p "Enter the PID of the script to stop: " PID
 
-pkill -P "$PID"
+#terminates the infinate process
+pkill -15 "bash ./4-to_infinity_and_beyond" -f
+
 
