@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+#Display lines containing the bash word ,showing PID of the Bash process
 pstree -Ac1 | grep --color=never "bash"
 
