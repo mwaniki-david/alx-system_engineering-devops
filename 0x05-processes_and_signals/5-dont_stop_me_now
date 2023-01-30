@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #stop the script that displays "to infinity and beyond"
-read -p "Enter the PID of the script to stop: " PID
-kill "$PID"
+read -p "Enter the PID of the script to stop: " 4-to_infinity_and_beyond
+kill "$4-to_infinity_and_beyond"
 
