@@ -1,14 +1,4 @@
 #!/usr/bin/env ruby
-def match(string)
-  regex = /hbt{1,4}n/
-  string.match(regex)
-end
+puts ARGV[0].scan(/hbt{1,4}n/).join
 
-argument = ARGV[0]
-
-if match(argument)
-  puts "Match found!"
-else
-  puts "No match found."
-end
 
