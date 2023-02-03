@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Get a list of all listening sockets
+listening_sockets=$(ss -tlpn | awk 'NR>1 {print $4}')
+
+# For each listening socket, display the port number, PID, and name of the program
+for socket in $listening_sockets; do
+  # Extract the port number from the socket string
+  port=$(echo $socket | awk -F: '{print $NF}')
+  
+  # Get the PID and name of the program for this socket
+  pid_name=$(lsof -i tcp:$port | awk 'NR>1 {print $2, $1}')
+  
+  # Display the results
+  echo "Port: $port, PID: $pid_name"
+done
+
+
